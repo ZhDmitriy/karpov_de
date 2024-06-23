@@ -1,5 +1,3 @@
-![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/684476f7-66e1-4a1c-aa2c-a5615328d09a)# karpov_de
-
 `№1 Проектировние логической модели даннных DWH`
 
 1. 3NF форма
