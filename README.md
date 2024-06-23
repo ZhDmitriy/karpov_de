@@ -4,7 +4,7 @@
 
 1. 3NF форма
 
-![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/2b9139a1-1b06-48d1-8157-6c1802d5493e)
+![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/30c7f621-3e97-4534-af99-9b79a0091238)
 
 2. Fact Dimensional
 
