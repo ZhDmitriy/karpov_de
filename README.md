@@ -1,4 +1,4 @@
-# karpov_de
+![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/684476f7-66e1-4a1c-aa2c-a5615328d09a)# karpov_de
 
 `№1 Проектировние логической модели даннных DWH`
 
@@ -9,4 +9,9 @@
 2. Fact Dimensional
 
 ![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/e11a5bac-4a1e-45f1-af12-32835d947323)
+
+3. Data Vault
+
+![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/34fa78ea-e11e-4539-8e77-5d84633178f5)
+
 
