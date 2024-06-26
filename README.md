@@ -1,6 +1,6 @@
 `№1 Проектирование логической модели даннных DWH`
 
-Все модели детальнее: https://drive.google.com/drive/folders/1lLZmsmLJOIcxTxBatXVHAgRdw0oRYENJ?usp=sharing
+Все модели детальнее: https://drive.google.com/file/d/1YtdCQPGtV2LjazzHuGUdABunrGjfk0Ea/view?usp=sharing
 
 1. 3NF форма
 
