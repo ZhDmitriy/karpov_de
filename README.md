@@ -10,6 +10,7 @@
 
 3. Data Vault
 
-![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/34fa78ea-e11e-4539-8e77-5d84633178f5)
+![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/79dced7b-4b40-4af4-a986-2769925d00d3)
+
 
 
