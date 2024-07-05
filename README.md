@@ -12,7 +12,7 @@
 
 3. Data Vault
 
-![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/f9f11be1-2460-40fe-91fc-7add646e7c94)
+![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/8092d176-1f8f-4d06-863a-25f33269f592)
 
 4. Anchor Modeling
 
