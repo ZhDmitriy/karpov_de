@@ -1,0 +1,31 @@
+-- Задание 1
+with habitat_answer as (
+	select t.gid, t.postgis_fi, t.habitat, t.hist_occup, t.recentstat, t.habitat_id, t.geom 
+	from public.buowl_habitat t 
+	where t.habitat_id::float <= 5
+)
+select habitat_id, st_area(geom) * 100000000
+from habitat_answer
+order by st_area(geom) * 100000000
+
+-- Задание 2
+with intesect_result as ( 
+	SELECT st_intersects(a.geom, b.geom) as answer 
+	FROM public.linear_projects AS a, public.linear_projects AS b 
+	where st_intersects(a.geom, b.geom) = true and a.gid < b.gid
+)
+select count(*)
+from intesect_result
+
+-- Задание 3 
+select to_tsvector(body::varchar) @@ to_tsquery('Ryanair')
+from public.articles
+
+-- Задание 4 
+select ts_rank(to_tsvector(body::varchar), to_tsquery('airline')), heading 
+from public.articles
+order by 1 desc
+
+-- Задание 5 
+select ts_headline(body, to_tsquery('Ryanair')||to_tsquery('Wizz')) AS headline, heading 
+from public.articles
