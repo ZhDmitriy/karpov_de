@@ -19,3 +19,13 @@
 ![image](https://github.com/ZhDmitriy/karpov_de/assets/141666797/d110b7a0-0fda-48a6-ac47-7cf230560d96)
 
 
+`№3 Создание первого DAG'а из трех тасок в AirFlow`
+
+Успешный Merge request: 
+![AirFlow](https://github.com/user-attachments/assets/6363b146-71a1-4798-ade0-72439c202dcf)
+
+DAG запушился в Airflow Karpov.Courses: 
+![image](https://github.com/user-attachments/assets/9284cc4b-8fbb-433e-974b-bc30f75f15af)
+
+Сам граф: 
+![image](https://github.com/user-attachments/assets/f50fb8f7-975e-472a-add2-cc9fc15d05c3)
