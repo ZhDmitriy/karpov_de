@@ -29,3 +29,17 @@ DAG запушился в Airflow Karpov.Courses:
 
 Сам граф: 
 ![image](https://github.com/user-attachments/assets/f50fb8f7-975e-472a-add2-cc9fc15d05c3)
+
+`№4 Создание сложного DAG'а с оператором ветвления`
+
+Успешный Merge request: 
+![image](https://github.com/user-attachments/assets/3e83b864-33ef-4e1c-9798-378d3433c141)
+
+Успешное выполнение DAG'а: 
+![image](https://github.com/user-attachments/assets/3ba4bc8b-b72f-4563-a32c-577bf74cb0e8)
+
+Получение результатов в Xcom: 
+![image](https://github.com/user-attachments/assets/2dc11e4a-d624-44dc-ac0e-b6458adc58f5)
+
+
+
