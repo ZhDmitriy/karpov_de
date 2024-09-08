@@ -1,0 +1,50 @@
+ssh -i C:/Users/janev/Downloads/karpov_vm.pem ubuntu@83.166.237.165 < -- подключение к виртуальной машине 
+
+PostgreSQL: 
+Внутренний IP адрес = 10.0.1.98 --Здесь виртуальная машина и база данных находятся в одной внутренней сети, поэтому 
+используется внутренний IP-адрес и настройки доступа firewall не требуется указывать при создании (так как 
+нет внешнего доступа к базе)
+Пользователь = user 
+Пароль = 10ds2J35c2J9rHQ4*
+Имя базы данных: mlflow-karpov
+
+S3: 
+Имя бакета = karpov_backet
+Директория внутри созданного бакета = mlflow
+
+Аккаунт S3: 
+Наименование аккаунта = mlflow_karpov_s3 
+Access Key ID = dSqF9MGatR9Jr2n78JxAgb
+Secret Key = 9Ch7w6FmrdBgHs1bq3RoHeC2aQitMgbsXoYnubVe1i83
+
+MLFLOW_S3_ENDPOINT_URL=https://hb.bizmrg.com
+MLFLOW_TRACKING_URI=http://10.0.1.97:8000   <-- по этому порту будет доступен MLFlow, в качестве аргумента
+передаем адрес виртуальной машины 
+
+[default]
+aws_access_key_id = dSqF9MGatR9Jr2n78JxAgb
+aws_secret_access_key = 9Ch7w6FmrdBgHs1bq3RoHeC2aQitMgbsXoYnubVe1i83
+
+
+http://83.166.237.165:8000
+
+--Запуск MLFlow server
+mlflow server --backend-store-uri postgresql://user:10ds2J35c2J9rHQ4*@10.0.1.98/mlflow-karpov --default-artifact-root s3://karpov_backet/mlflow/ -h 0.0.0.0 -p 8000
+
+
+[Unit]
+Description=MLflow Tracking Server
+After=network.target
+[Service]
+Environment=MLFLOW_S3_ENDPOINT_URL=https://hb.bizmrg.com
+Restart=on-failure
+RestartSec=30
+StandardOutput=file:/home/ubuntu/mlflow_logs/stdout.log
+StandardError=file:/home/ubuntu/mlflow_errors/stderr.log
+User=ubuntu
+ExecStart=/bin/bash -c 'PATH=/usr/bin/python3:$PATH exec mlflow server --backend-store-uri postgresql://user:10ds2J35c2J9rHQ4*@10.0.1.98/mlflow-karpov --default-artifact-root s3://karpov_backet/mlflow/ -h 0.0.0.0 -p 8000' 
+[Install]
+WantedBy=multi-user.target
+
+Запуск JupiterHub: 
+curl -L https://tljh.jupyter.org/bootstrap.py | sudo -E python3 - --admin zhdanov
