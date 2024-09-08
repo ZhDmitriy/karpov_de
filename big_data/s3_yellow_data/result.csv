@@ -1,0 +1,19 @@
+month,payment_type,tip_amount
+1,Cash,0.0003412275885868457
+1,Credit card,2.985666787865388
+1,Dispute,0.02415056739551619
+1,No charge,-0.00221527099609375
+1,Unknown,0.0
+2,Cash,0.0
+2,Credit card,5.0456521739130435
+3,Cash,0.0
+3,Credit card,1.5
+4,Credit card,1.76
+5,Cash,0.0
+5,Credit card,3.6500000000000004
+6,Cash,0.0
+7,Cash,0.0
+7,Credit card,2.2199999999999998
+12,Cash,0.0
+12,Credit card,2.8589010989010992
+12,No charge,0.0
